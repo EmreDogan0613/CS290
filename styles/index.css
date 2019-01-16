@@ -1,0 +1,29 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    background: linear-gradient(217deg, #092657, #71C7FF);
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+P{
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
