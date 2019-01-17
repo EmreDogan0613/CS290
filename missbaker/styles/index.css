@@ -1,0 +1,48 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+p{
+    color:white
+}
+h1{
+    color: white
+}
+h2{
+    color: white
+}
+body{
+    background: black;
+}
+h1{
+    text-align: center
+}
+h2{
+    text-align: center
+}
+p{
+    text-align: center
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*html {
+    background: linear-gradient(217deg, #092657, #71C7FF);
+    min-height: 100vh;
+}*/
+/*p{
+    font-family: "comic sans MS",cursive, sans-serif;
+}*/
