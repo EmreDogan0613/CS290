@@ -26,5 +26,6 @@ P{
 }
 ul{
     text-align: center;
+    list-style-type: none;
 }
 <hr style="height:30px">
