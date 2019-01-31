@@ -8,7 +8,8 @@
     box-sizing: inherit;
 }    
 table {
-  width: 1400px;
+  max-width:1400px;
+width: auto;
 }
 table, th, td, wp {
   border: 1px solid black;
@@ -22,6 +23,7 @@ th{
     background-color: darkgray
 }
 caption{
+    font-size: 45px;
     
 }
 wp{
