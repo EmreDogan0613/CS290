@@ -1,0 +1,56 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+p{
+    color:steelblue;
+    font-family:"Times New Roman", Times, serif
+    
+}
+h1{
+    color: steelblue;
+    font-family: Georgia, serif;
+}
+h2{
+    color: steelblue;
+    font-family: Georgia, serif;
+}
+body{
+    background: black;
+}
+h1{
+    text-align: center
+}
+h2{
+    text-align: center
+}
+p{
+    text-align: center
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+figure{
+    text-align: center;
+    color: steelblue;
+}
+/*html {
+    background: linear-gradient(217deg, #092657, #71C7FF);
+    min-height: 100vh;
+}*/
+/*p{
+    font-family: "comic sans MS",cursive, sans-serif;
+}*/

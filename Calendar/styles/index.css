@@ -1,0 +1,29 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}    
+table {
+  width: 1400px;
+}
+table, th, td, wp {
+  border: 1px solid black;
+}
+tr{
+    text-align: center;
+    height: 100px
+}
+th{
+    color: grey;
+    background-color: darkgray
+}
+caption{
+    
+}
+wp{
+background-color: blue;
+}
