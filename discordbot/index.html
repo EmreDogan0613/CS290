@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <Title> Discord bot</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/index.css"/>
+    </head>
+    <body>
+        <h1>Discord bot</h1>
+        <p> I messed around with a  spam discord bot with node js I wasnt quite sure how to show it but so here is some code: <br>
+        const Discord = require('discord.js');<br>
+const client = new Discord.Client();<br>
+
+client.on('ready', () => {<br>
+ console.log(`Logged in as ${client.user.tag}!`);<br>
+ });<br>
+
+client.on('message', msg => {<br>
+ if (msg.content === '1') {<br>
+ msg.reply('0');<br>
+ }<br>
+ });<br>
+
+client.login('token');<br></p>
+    </body>
+
+</html>
