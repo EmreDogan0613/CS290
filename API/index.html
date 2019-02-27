@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Mapquest</title>
+    <style>
+      #map {
+        width: 600px;
+        height: 600px;
+      }
+    </style>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+    <script>
+        
+      var L;
+      window.onload = function() {
+        L.mapquest.key = 'uKubi3GoaPALzirsBm0Ip5WXfAHYb2E6';
+        var map = L.mapquest.map('map', {
+          center: [40.981972, 28.814392],
+          layers: L.mapquest.tileLayer('hybrid'),
+          zoom: 12
+        });
+          L.marker([41.010702, 28.967879], {
+  icon: L.mapquest.icons.marker({
+    primaryColor: '#22407F',
+    secondaryColor: '#3B5998',
+    shadow: true,
+    size: 'md',
+    symbol: 'G'
+  })
+})
+.bindPopup('The Grand Bazaar')
+.addTo(map);
+      }
+    
+      
+    </script>
+
+  </head>
+  <body>
+    <h1>My Mapquest example</h1>
+
+    <div id="map"></div>
+  </body>
+</html>
