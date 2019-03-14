@@ -7,3 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+
+//const PORT = process.env.PORT || 5000;
+
+//router.listen(PORT, () => console.log(`Server started on port ${PORT}`));
