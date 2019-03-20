@@ -1,12 +1,11 @@
 const EXPRESS = require("express");
 const SOCKETIO = require("socket.io");
 const app = EXPRESS();
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+const PORT = process.env.PORT || 3000;
 const IO = SOCKETIO(PORT);
 const PATH = require("path");
 const randomWords = require('random-words');
+app.listen(PORT,()=>console.log(`Servefr started on port ${PORT}`));
 
 var users = {};
 var name = '';
