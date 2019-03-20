@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="/index.css" rel="stylesheet">
+        <title>Chat</title>
+        
+        <style>  
+            .outer{
+            width: 900px;
+            margin: auto;
+        }
+        .room{
+            width: 400px;
+            margin: 5px;
+            align-content: center;
+
+
+        }
+        .messages{
+            width: 390px;
+            margin:5px;
+            height: 600px;
+            background-color: aqua;
+        }
+        .txt-send{
+            width: 300px;
+            margin:5px;
+        }
+        body{
+            align-content: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="room">
+                <h1>WELCOME TO THE CHAT</h1>
+                <div class="messages" id="Messages"></div>
+                <form>
+                    <input type="text" name="" id="Txt">
+                    <input type="button" value="Send" id="Btn">
+                </form>
+            </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io();
+
+            socket.on("connect", function(){
+                var chatRoom = "chatRoom";
+                socket.emit('chatRoom', chatRoom);
+
+            });
+
+
+            // NODE
+            var Btn = document.getElementById("Btn");
+            var Txt = document.getElementById("Txt");
+            var Messages = document.getElementById("Messages");
+
+
+            Btn.addEventListener("click", function(){
+                socket.emit("new message", Txt.value);
+            });
+            socket.on("news", function(data){
+                Messages.innerHTML = Messages.innerHTML + "<br>" + data;
+            });
+            socket.on("new user", function(data){
+                Messages.innerHTML = Messages.innerHTML + "<br>" + data;
+            });
+
+
+        </script>
+    </body>
+</html>
