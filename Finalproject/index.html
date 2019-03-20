@@ -28,10 +28,7 @@
         .txt-send{
             width: 300px;
             margin:5px;
-        }
-        body{
-            align-content: center;
-        }
+     
         </style>
     </head>
     <body>
@@ -47,7 +44,7 @@
 
         <script src="/socket.io/socket.io.js"></script>
         <script>
-            var socket = io();
+            var socket = io.connect ("https://boiling-crag-76808.herokuapp.com/");
 
             socket.on("connect", function(){
                 var chatRoom = "chatRoom";

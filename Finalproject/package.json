@@ -7,14 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-      "node",
-      "express",
-      "heroku"
+    "node",
+    "express",
+    "heroku"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
+    "http": "0.0.0",
     "random-words": "^1.1.0",
     "socket.io": "^2.1.0"
   }

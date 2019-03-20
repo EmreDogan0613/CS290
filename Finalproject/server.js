@@ -1,11 +1,17 @@
+//please god let this upload correctly
+
 const EXPRESS = require("express");
 const SOCKETIO = require("socket.io");
 const app = EXPRESS();
-const PORT = process.env.PORT || 3000;
-const IO = SOCKETIO(PORT);
+const server = require(http).server(app);
+//const PORT = process.env.PORT || 3000;
+//const http= require("http");
+const IO = SOCKETIO(server);
 const PATH = require("path");
 const randomWords = require('random-words');
-app.listen(PORT,()=>console.log(`Servefr started on port ${PORT}`));
+
+
+//app.listen(server,()=>console.log(`Server started on port ${server}`));
 
 var users = {};
 var name = '';
@@ -30,8 +36,5 @@ IO.sockets.on("connection", function(socket){
 
 });
 
+server.listen(process.env.PORT || 5000);
 
-
-//app.listen(port, () => {
-//    console.log(`Redirecting app listening on port ${port}!`);
-//});s
